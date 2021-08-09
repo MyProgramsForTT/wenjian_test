@@ -15,7 +15,7 @@ import os
 
 async def read_keyword_weights():
     name = ''
-    file_dir = 'C:/Users/kakarrote/Desktop/fidder/demo'
+    file_dir = './api'
     for root, dirs, files in os.walk(file_dir, topdown=False):
         for i in files:
             data=i+','
