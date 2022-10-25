@@ -12,14 +12,13 @@ async def read_keyword_weights():
 
 import os
 @app.get("/")
-
 async def read_keyword_weights():
     name = ''
     file_dir = './api'
     for root, dirs, files in os.walk(file_dir, topdown=False):
         for i in files:
-            data=i+','
+            data = f'{i},'
             name+=data
-       
+
 
     return name
